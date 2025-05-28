@@ -86,7 +86,7 @@ touch deployed-address.json     # deployed contract address will be saved here
 npx hardhat compile
 
 # Deploy to network
-node script/deploy.ts
+npx tsx script/deploy.ts
 ```
 
 ### Frontend Setup
