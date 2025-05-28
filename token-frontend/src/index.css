@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Agile';
+    src: url('/fonts/Agile/agile.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
