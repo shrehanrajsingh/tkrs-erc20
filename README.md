@@ -114,7 +114,7 @@ After deploying the backend:
 
 If you encounter any issues following these steps, please:
 
-- [Open an issue](https://github.com/yourusername/tkrs/issues/new) on this repository
+- [Open an issue](https://github.com/yourusername/tkrs-erc20/issues/new) on this repository
 - Contact: [shrehanrajsingh.24@kgpian.iitkgp.ac.in](mailto:shrehanrajsingh.24@kgpian.iitkgp.ac.in)
 
 ---
