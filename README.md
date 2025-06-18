@@ -80,6 +80,7 @@ cd token-srs
 
 # Create output directory
 mkdir out
+cd out
 touch deployed-address.json     # deployed contract address will be saved here
 
 # Compile contracts
