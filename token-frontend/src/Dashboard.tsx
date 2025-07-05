@@ -121,6 +121,7 @@ export default function Dashboard({
         abi: tokenAbi,
         functionName: "mint",
         args: [account, parseEther(amount.toString())],
+        symbol,
       });
 
       toast.info(<>Mint tx sent: {hash}</>);
@@ -139,10 +140,12 @@ export default function Dashboard({
 
     try {
       const hash = await walletClient.writeContract({
+        account,
         address: tokenAddress,
         abi: tokenAbi,
         functionName: "burn",
         args: [parseEther(amount.toString())],
+        symbol,
       });
       toast.info(<>Burn tx sent: {hash}</>);
     } catch (e: any) {
@@ -164,7 +167,6 @@ export default function Dashboard({
         functionName: "transfer",
         args: [td.recipient, parseEther(td.amount)],
         account,
-        symbol,
       });
 
       toast.success(<>Transfer sent: {hash}</>);
@@ -193,7 +195,7 @@ export default function Dashboard({
                 Docs
               </a>
               <a
-                href="https://github.com/your-repo/token"
+                href="https://github.com/shrehanrajsingh/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-300 hover:text-white transition-colors duration-200"
